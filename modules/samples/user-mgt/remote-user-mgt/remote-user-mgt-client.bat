@@ -10,8 +10,8 @@ echo "You must set the JAVA_HOME variable before running the client"
 goto end
 
 :runClient
-set CLASSPATH=..\lib\*;target\*
-"%JAVA_HOME%\bin\java" -classpath %CLASSPATH% org.wso2.carbon.identity.samples.sts.Client
+set CLASSPATH=target\*;target\classes\lib\*
+"%JAVA_HOME%\bin\java" -classpath %CLASSPATH% org.wso2.remoteum.sample.RemoteUMClient
 
 :end
 

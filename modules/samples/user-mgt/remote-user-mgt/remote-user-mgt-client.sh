@@ -6,6 +6,6 @@ if [ -z "$JAVA_HOME" ]; then
 fi
 
 
-export CLASSPATH=$CLASSPATH:../lib/*:target/*
-$JAVA_HOME/bin/java org.wso2.carbon.identity.samples.sts.Client $@
+export CLASSPATH=$CLASSPATH:target/*:target/classes/lib/*
+$JAVA_HOME/bin/java org.wso2.remoteum.sample.RemoteUMClient $@
 
